@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/_head.ejs') %>
+  <body>
+    <%- include('partials/_header.ejs') %>
+    <main role="main" class="container mt-4 text-center">
+      <h2>Share Your Achievement!</h2>
+      <p>Congratulations on completing the puzzle! Share your badge with the world.</p>
+      <div>
+        <a href="<%= shareUrls.facebook %>" target="_blank" class="btn btn-primary" aria-label="Share on Facebook">Share on Facebook</a>
+        <a href="<%= shareUrls.twitter %>" target="_blank" class="btn btn-info" aria-label="Share on Twitter">Share on Twitter</a>
+        <!-- Note: Instagram does not support direct sharing to feed via URL. This button is for demonstration. -->
+        <a href="<%= shareUrls.instagram %>" target="_blank" class="btn btn-danger" aria-label="Share on Instagram">Share on Instagram</a>
+      </div>
+    </main>
+    <%- include('partials/_footer.ejs') %>
+  </body>
+</html>

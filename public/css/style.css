@@ -1,0 +1,111 @@
+/* Basic Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Responsive Typography */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* Layout Adjustments */
+.container {
+  padding: 0 15px;
+  max-width: 1140px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* Button Enhancements for Accessibility */
+.btn {
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* High Contrast & Readability */
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  color: #0066cc;
+}
+
+a:focus, a:hover {
+  color: #004499;
+  text-decoration: underline;
+}
+
+/* Ensuring Adequate Color Contrast */
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Chat Interface Styles */
+.chat-display {
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.user-message, .nabu-message {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.user-message {
+    text-align: right;
+    background-color: #e7f3ff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.nabu-message {
+    text-align: left;
+    background-color: #d1e7dd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
